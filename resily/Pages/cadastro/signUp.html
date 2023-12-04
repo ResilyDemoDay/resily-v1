@@ -17,23 +17,23 @@
   <div class="main">
     <div class="container">
 
-      <form action="">
+      <form id="cadastroForm">
 
         <label for="email">e-mail: </label>
-        <input type="email" placeholder="resily@lorem.com">
+        <input type="email" id="email" placeholder="Ex: resily@lorem.com">
 
-        <label for="nome-usuario">nome usuario: </label>
-        <input type="text" placeholder="Maria">
+        <label for="nome">nome usuario: </label>
+        <input type="text" id="nome" placeholder="Ex: Maria">
 
-        <label for="senha">senha: </label>
-        <input type="password" placeholder="digite sua melhor senha">
+        <label for="senha">senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua melhor senha">
 
-        <label for="confirmar-senha">confirmar senha: </label>
-        <input type="password" placeholder="confirme sua senha">
+         <label for="confirmar-senha">confirmar senha: </label>
+        <input type="password" placeholder="Confirme sua senha"> 
 
         <div class="btn">
-          <button type="submit"><a href="../homepage/index.html">Criar conta</a></button>
-          <button> <a href="../signIn/Login.html">login</a> </button>
+          <button type="button" onclick="enviarCadastro()">Criar Conta</button>
+          <button> <a href="#login">login</a></button>
         </div>
 
       </form>
@@ -44,6 +44,8 @@
 
     </div>
   </div>
+
+  <script src="envioDados.js"></script>
 </body>
 
 </html>
